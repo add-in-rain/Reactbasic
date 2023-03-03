@@ -16,10 +16,10 @@ function App() {
 
   let [bgColor, setbgColor] = useState('white');
 
-  // let changeBg = () => {
-  //   let newBg = bgColor == 'white'? 'red' : 'white';
-  //   setbgColor(newBg)
-  // }
+  let changeBg = () => {
+    let newBg = bgColor == 'white'? 'red' : 'white';
+    setbgColor(newBg)
+  }
 
   return (
     <div className="App" style={{backgroundColor : bgColor}}>
@@ -72,12 +72,12 @@ function App() {
         setTitle(copy)
       }}>글정렬</button>
 
-      {/* <button onClick={changeBg}>배경색 변경</button> */}
+      <button onClick={changeBg}>배경색 변경</button>
 
-      <button onClick={() => {
+      {/* <button onClick={() => {
           bgColor === 'black' ? 
           setbgColor('white') : setbgColor('black')
-      }}>배경색 변경</button>
+      }}>배경색 변경</button> */}
     </div>
   );
 }
