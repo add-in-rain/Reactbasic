@@ -14,8 +14,15 @@ function App() {
   // 한 곳에다가 여러가지 자료를 저장하고 싶을 때 Array
   let [title, setTitle] = useState(["DW아카데미 503호", "DW아카데미 502호", "DW아카데미 501호"]);
 
+  let [bgColor, setbgColor] = useState('white');
+
+  let changeBg = () => {
+    let newBg = bgColor == 'white'? 'red' : 'white';
+    setbgColor(newBg)
+  }
+
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor : bgColor}}>
       <h1>Hello, {user}!</h1>
       <p>This is a React App</p>
 
@@ -50,6 +57,7 @@ function App() {
           }}>👍</button> + {count3}</span>
         <p>안녕하세요. 저는 철수입니다.</p>
       </div>
+      
       <button onClick={() => {
         let copy = [...title];
         copy[0] = "뻥이야!";
@@ -63,7 +71,13 @@ function App() {
         copy.sort();
         setTitle(copy)
       }}>글정렬</button>
-      
+
+      <button onClick={changeBg}>배경색 변경</button>
+
+      {/* <button onClick={() => {
+          bgcolor === 'black' ? 
+          setbgColor('white') : setbgColor('black')
+      }}>배경색 변경</button> */}
     </div>
   );
 }

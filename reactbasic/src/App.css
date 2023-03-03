@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.App {
+  width: 400px;
+  height: 400px;
+}
+
+
 .btn {
   border: none;
   background-color: transparent;
@@ -14,3 +20,4 @@
   border-radius: 5px;
   margin: 10px;
 }
+
