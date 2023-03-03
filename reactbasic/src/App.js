@@ -75,7 +75,7 @@ function App() {
       {/* <button onClick={changeBg}>배경색 변경</button> */}
 
       <button onClick={() => {
-          bgcolor === 'black' ? 
+          bgColor === 'black' ? 
           setbgColor('white') : setbgColor('black')
       }}>배경색 변경</button>
     </div>
