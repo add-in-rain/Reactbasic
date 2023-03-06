@@ -9,3 +9,14 @@ let person = {
 }
 
 console.log(person);
+
+
+// 단축 표기법
+// 키와 키값에 들어가는 변수의 이름이 같다면, 생략하고 한번만 작성해도 된다.
+// 키와 밸류 값이 일치할 때만 줄여서 사용 가능
+let person2 = {
+  name,
+  age
+}
+
+console.log(person2)
