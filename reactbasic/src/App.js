@@ -36,14 +36,28 @@ function App() {
 
   // State는 기존 값을 잃어버리지 않고 기억하고 있다.
 
+  let num1 = [1,2,3,4]
+  let name = ['돌쇠', '순자', '맹구', '철수']
+
   return (
     <div className='App'>
         {/* <Box name="돌쇠" num="1"/>
         <Box name="순자" num="2"/>
         <Box name="맹구" num="3"/>
         <Box name="철이" num="4"/> */}
-
+        {
+        name.map(function(a, i){
+          return (
+            <div className='box' key={i}>
+              <h1>Box{num1[i]}</h1>
+              <h2>{a}</h2>
+            </div>
+          )
+          })
+        }
       </div>
+
+     
   );
 }
 
