@@ -1,5 +1,5 @@
 import React from "react";
-import'./Comment.css';
+// import'./Comment.css';
 
 const styles = {
   wrapper : {
@@ -30,10 +30,9 @@ const styles = {
   closeBtn : {
     width : '25px',
     height : '25px',
-    marginLeft : '20px',
     margin : 'auto',
     fontSize: '14px',
-  }
+  },
 }
 
 
@@ -49,8 +48,9 @@ function Comment(props) {
         <span style={styles.nameText}>{props.name}</span>
         <span style={styles.commentText}>{props.comment}</span>
       </div>
-      <button style={styles.closeBtn}>X</button>
+      <button onClick={props.onDelete} style={styles.closeBtn}>X</button>
     </div>
+    
   )
 }
 

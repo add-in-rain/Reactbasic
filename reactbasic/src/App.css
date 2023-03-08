@@ -1,16 +1,16 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .App {
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
 }
 
 
-.btn {
+/* .btn {
   border: none;
   background-color: transparent;
 }
@@ -19,5 +19,5 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px;
-}
+} */
 

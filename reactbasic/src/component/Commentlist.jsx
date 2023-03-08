@@ -1,5 +1,6 @@
 import React from "react";
 import Comment from "./Comment";
+import {useState} from "react";
 
 const comments = [
   {
@@ -17,15 +18,41 @@ const comments = [
 ]
 
 function CommentList() {
+  const [commentList, setCommentList] = useState(comments);
+  const [name, setName] = useState('');
+  const [content, setContent] = useState('');
+
+  const deleteComment = (index) => {
+    const newCommentList = [...commentList];
+    newCommentList.splice(index, 1)
+    setCommentList(newCommentList)
+  }
+
+  const addComment = () => {
+    // const add = {name: "히히히", comment : "망했시유~"}
+    // setCommentList([add,...commentList])
+
+    const add = {name : name, comment : content}
+    setCommentList([add,...commentList])
+    setName('')
+    setContent('')
+  }
+
   return (
     <div>
       {
-        comments.map((comment, i)=>{
+        commentList.map((comment, i)=>{
           return (
-            <Comment name={comment.name} comment={comment.comment} key={i}/>
+            <Comment name={comment.name} comment={comment.comment} key={i} onDelete={()=> deleteComment(i)}/>
           )
         })
       }
+      <div>
+      이름 : <input value={name} onChange = {(e) => setName(e.target.value)} type="text" /> 
+      댓글 : <input value={content} onChange = {(e) => setContent(e.target.value)} type="text" /> 
+      <button onClick={addComment}>글 추가</button>
+      </div>
+      
     </div>
   )
 }
