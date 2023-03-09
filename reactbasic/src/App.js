@@ -11,6 +11,8 @@ function App() {
   return (
     <div className='App'>
       <CommentList/>
+      {/* <div className='back'></div> */}
+      <div style={{backgroundImage : 'url(./배경.jpg)', height : '400px'}}></div>
     </div>
   )
 }
