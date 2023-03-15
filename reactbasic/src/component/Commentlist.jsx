@@ -32,10 +32,14 @@ function CommentList() {
     // const add = {name: "히히히", comment : "망했시유~"}
     // setCommentList([add,...commentList])
 
-    const add = {name : name, comment : content}
-    setCommentList([add,...commentList])
-    setName('')
-    setContent('')
+    name === '' || content === '' ? alert('이름과 댓글을 입력하세요') : (
+      (() => {
+        const add = {name : name, comment : content}
+        setCommentList([add,...commentList])
+        setName('')
+        setContent('')
+      })()
+    )
   }
 
   return (

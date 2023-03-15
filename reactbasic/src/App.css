@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-/* .App {
-  width: 550px;
-  height: 550px;
-} */
+.App {
+  width: 500px;
+  height: 500px;
+}
 
 
 /* .btn {
@@ -21,10 +21,10 @@
   margin: 10px;
 } */
 
-.back {
+/* .back {
   height: 400px;
   background-image: url(./배경.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
