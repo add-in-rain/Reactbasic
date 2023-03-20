@@ -25,3 +25,30 @@
   object-fit: cover;
 }
 
+.btn-list button {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-list button:last-child {
+  margin-right: 0;
+}
+
+.win {
+  border: 5px solid green;
+}
+
+.lose {
+  border: 5px solid red;
+}
+
+.tie {
+  border: 5px solid #000;
+}
