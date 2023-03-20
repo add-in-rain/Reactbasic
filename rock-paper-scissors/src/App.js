@@ -5,8 +5,10 @@ import Box from './component/Box'
 function App() {
   return (
     <div className="App">
-      <Box/>
-      <Box/>
+      <div className='box-list'>
+        <Box title="You"/>
+        <Box title="Computer"/>
+      </div>     
     </div>
   );
 }

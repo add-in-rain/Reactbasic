@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
   return (
     <div className='box'>
-      <h1>User</h1>
+      <h1>{props.title}</h1>
       <h2>Rock</h2>
       <img src='https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg'></img>
       <h2>win</h2>
