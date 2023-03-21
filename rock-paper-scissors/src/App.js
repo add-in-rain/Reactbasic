@@ -52,9 +52,9 @@ function App() {
     // user.name == "paper", computer.name == "scissors": user LOSE / computer WIN
     if(user.name == computer.name) {
       return "tie"
-    } else if (user.name == "rock") return computer.name == "paper" ? "LOSE" : "WIN"
-      else if (user.name == "scissors") return computer.name == "paper" ? "WIN" : "LOSE"
-      else if (user.name == "paper") return computer.name == "rock" ? "WIN" : "LOSE"
+    } else if(user.name == "Rock") return computer.name == "Scissors" ? "win" : "lose"
+      else if(user.name == "Scissors") return computer.name == "Paper" ? "win" : "lose"
+      else if(user.name == "Paper") return computer.name == "Rock" ? "win" : "lose"
   }
 
   const randomChoice= ()=> {
