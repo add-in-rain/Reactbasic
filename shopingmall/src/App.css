@@ -8,7 +8,7 @@ li {
   list-style: none;
 }
 
-.login ul {
+.login {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -20,6 +20,11 @@ li {
   display: flex;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 0;
+}
+
+.login-list li {
+  cursor: pointer;
 }
 
 .login-list li::after {
@@ -52,6 +57,10 @@ li {
   font-weight: 500;
 }
 
+.gnb-list li {
+  cursor: pointer;
+}
+
 .icon-list {
   display: flex;
   align-items: center;
@@ -80,8 +89,39 @@ li {
 
 .icon {
   font-size: 22px;
+  cursor: pointer;
 }
 
 .icon:first-child {
   margin-right: 22px;
+}
+
+.product-card-list {
+  margin-top: 50px;
+}
+
+.product-card-list img {
+  width: 100%;
+}
+
+.card-content-list {
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.choice-item {
+  color: brown;
+}
+
+.new-item {
+  font-size: 14px;
+  color: gray;
+}
+
+.price-item {
+  margin-top: 12px;
+}
+
+.login-wrapper {
+  width: 680px;
 }
